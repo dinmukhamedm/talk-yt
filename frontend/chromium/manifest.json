@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Talk to YT Extension",
+  "version": "1.0",
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["https://www.youtube.com/*"],
+  "action": {
+    "default_icon": {
+      "16": "static/16px.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "static/16px.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/watch?v=*"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [ "stylesheet.css", "static/avatar.jpg", "index.html", "index.js" ],
+      "matches": [ "https://www.youtube.com/*" ]
+    }
+  ]
+}
