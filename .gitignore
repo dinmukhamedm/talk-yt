@@ -1,3 +1,4 @@
 talk-yt/poetry.lock
 talk-yt/pyproject.toml
 talk-yt/tokens.json
+__pycache__/

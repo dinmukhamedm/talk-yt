@@ -25,3 +25,4 @@ urllib3==2.0.2
 websockets==11.0.3
 whispercpp==0.0.17
 yarl==1.9.2
+youtube-transcript-api==0.6.0
