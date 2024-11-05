@@ -9,9 +9,9 @@ Talk to any YouTube video
 1. Create a json file `tokens.json` that will have your model provider tokens in the following format
 ```json
 {
-  'openai': <YOUR_OPENAI_TOKEN>,
-  'anthropic': <YOUR_ANTHROPIC_TOKEN>,
-  ...
+  "openai": "<YOUR_OPENAI_TOKEN>",
+  "anthropic": "<YOUR_ANTHROPIC_TOKEN>",
+  "...": "..."
 }
 ```
 2. Install the requirements: `pip install -r requirements.txt`
